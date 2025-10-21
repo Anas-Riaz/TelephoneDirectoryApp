@@ -92,7 +92,7 @@ Other supporting tables:
 
 ## 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/EmployeeDirectoryApp.git
+git clone https://github.com/Anas-Riaz/EmployeeDirectoryApp.git
 cd EmployeeDirectoryApp
 ```
 
