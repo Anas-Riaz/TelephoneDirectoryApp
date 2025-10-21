@@ -1,0 +1,164 @@
+.add-employee-form-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.Add-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* General input styling */
+.Add-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.Add-form input:focus {
+  border-color: #007bff;
+}
+
+/* IP Extensions section */
+.ip-extensions {
+  grid-column: 1 -1; /* Full width of form */
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ip-extension-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ip-extension-row input {
+  flex: 1;
+}
+
+.ip-extension-row button {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  width: 45%;
+  height: 40px;
+  background: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.ip-extension-row button:hover {
+  transition: all 0.3s ease;
+  background: #1f87a1;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Remove button styling */
+.ip-extension-row .remove-btn {
+  background: #dc3545;
+}
+
+.ip-extension-row .remove-btn:hover {
+  background: #a71d2a;
+}
+
+/* Label styling */
+.Add-form label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+/* Add button styling */
+.submit-btn {
+  grid-column: 1 / -1;
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: #125464e8;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.submit-btn:hover {
+  background: #1f87a1;
+  transform: scale(1.05);
+}
+
+/* Disabled state */
+.submit-btn:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+.submit-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Error list styling */
+.error-list {
+  grid-column: 1 / -1; /* Span across the full form width */
+  background: #ffe5e5;
+  border: 1px solid #ff9999;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-top: 0.8rem;
+  color: #a80000;
+  font-size: 0.9rem;
+}
+
+.error-list ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.error-list li {
+  margin-bottom: 0.4rem;
+}
+
+.error-list li:last-child {
+  margin-bottom: 0;
+}
+
+
+.success-msg {
+  grid-column: 1 / -1;
+  background: #e5ffe9;
+  border: 1px solid #99ffb0;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-top: 0.8rem;
+  color: #006622;
+  font-size: 0.9rem;
+}

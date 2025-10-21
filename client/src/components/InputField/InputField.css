@@ -1,0 +1,34 @@
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #4a90e2;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+
+/* Optional responsive adjustments */
+@media (min-width: 1440px) {
+  .form-group input {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .form-group input {
+    font-size: 1.25rem;
+    padding: 1.25rem;
+  }
+}

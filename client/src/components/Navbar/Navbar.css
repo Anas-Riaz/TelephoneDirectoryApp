@@ -1,0 +1,110 @@
+/* NavBar.css */
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar .admin-user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  position: relative; /* important for dropdown positioning */
+}
+
+
+.nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  
+  border-bottom: 2px solid transparent; /* Keep space ready */
+  transition: color 0.4s ease, border-color 0.3s ease; /* Animate only color */
+}
+
+.nav-link:hover {
+  color: var(--logout-hover);
+  border-color: var(--logout-hover); /* Smooth transition */
+}
+
+
+/* Dropdown toggle button */
+.admin-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Dropdown menu */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.3); /* transparent white */
+  backdrop-filter: blur(8px);           /* blur effect */
+  -webkit-backdrop-filter: blur(8px);   /* Safari support */
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  min-width: 180px;
+  padding: 0.6rem 0.4rem;
+  transition: all 0.3s ease-in-out;  /* smooth fade + slide */  
+}
+
+
+
+.submenu li {
+  margin: 0px;
+  list-style: none;
+}
+
+.submenu .nav-link {
+  display: block;
+  width: 100%;
+  padding: 0.4rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.submenu .nav-link:hover {
+  background: rgba(255, 255, 255, 0.3); /* transparent white */
+  backdrop-filter: blur(8px);
+}
+
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .submenu {
+    left: unset;
+    right: 0;
+    min-width: 150px;
+  }
+}

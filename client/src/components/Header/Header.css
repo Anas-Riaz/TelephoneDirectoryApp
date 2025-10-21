@@ -1,0 +1,181 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #264c6d;
+  --accent-color: #f5f7fa;
+  --text-color: #333;
+  --logout-bg: #264c6d;
+  --logout-hover: #356a99;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: "Poppins", "Mona Sans" !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--accent-color);
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.header__logo {
+  width: 70px;
+  object-fit: contain;
+}
+
+.header__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a5a;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Navigation Styles */
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  /* spacing between links */
+}
+
+.nav__link {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 2px;
+  transition: all 0.2 ease;
+}
+
+.nav__link:hover {
+  color: var(--logout-hover);
+  border-bottom: 2px solid var(--logout-hover);
+  transition: all 0.2 ease;
+}
+
+/* Active link style (optional if using NavLink later) */
+.nav__link.active {
+  color: var(--logout-hover);
+  font-weight: 600;
+  border-bottom: 2px solid blue;
+  transition: all 0.4 ease;
+}
+
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__right span{
+  font-size: 0.8rem;
+}
+
+.user__name {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.login__btn{
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--logout-bg);
+  color: white;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.logout__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--logout-bg);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.logout__btn img {
+  height: 16px;
+}
+
+.logout__btn:hover {
+  background: var(--logout-hover);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .header__left {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header__title {
+    font-size: 1.2rem;
+  }
+
+  .header__right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logout__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav__link {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__logo {
+    height: 40px;
+  }
+
+  .header__title {
+    font-size: 1rem;
+  }
+
+  .logout__btn {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

@@ -1,0 +1,42 @@
+.resultContainer {
+  width: 100%;
+  max-width: calc(100% - 10px); /* leave some breathing space */
+  margin: 1rem auto;
+  overflow-x: auto; /* horizontal scroll if needed */
+  border-radius: 1rem;
+}
+
+.resultContainer h1{
+  font-size: 1.8rem;
+  color: #0e1436;
+  font-family: "Mona Sans";
+  font-weight: 800;
+  /* color: #1e3a5a; */
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  border-radius: 1rem;
+  padding: 1.5rem;  
+  background-color: #f3ede8 !important;
+}
+
+.customTable{
+  background-color: #f3ede8 !important;
+}
+
+.customHeader {
+  font-family: "Poppins", "MonaSans" !important;
+  font-weight: 600 !important;
+  background-color: #383b3d !important;
+  color: white !important;
+  text-transform: uppercase !important;
+}
+
+
+.customCell{
+  font-family: "Poppins" !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+}

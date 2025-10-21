@@ -1,0 +1,126 @@
+/* Wrapper similar to form-section */
+.compose-form-section .dropdowns-form {
+  margin: 1rem;
+  flex: 1;
+}
+
+.dropdowns-form {
+    padding: 1.5rem;
+    background-color: #CABFAF;
+    /* background-color: #f3ede8; */
+    width: 100%;
+    opacity: 0.95;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.08);
+    margin: 1rem auto;
+    max-width: 700px; /* smaller than employee form since it's single input */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Form alignment */
+  .dropdowns-form form {
+    display: grid;
+    grid-template-columns: 1fr; /* only one field */
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Label styling (match AddEmployeeForm) */
+  .dropdowns-form label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #1e3a5a;
+    display: block;
+  }
+  
+  /* InputField inherits your InputField.css, but let's give consistency */
+  .dropdowns-form input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+  }
+  
+  .dropdowns-form input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Actions row (Save + Clear) */
+  .form-action {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin: 0.6rem 0;
+  }
+  
+  .form-action button {
+    padding: 0.6rem 1.3rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  /* Save button */
+  .form-action button[type="submit"] {
+    background: #125464e8;
+    color: white;
+  }
+  
+  .form-action button[type="submit"]:hover {
+    background: #1f87a1;
+    transform: scale(1.05);
+  }
+  
+  /* Clear button */
+  .form-action button[type="button"] {
+    background: transparent;
+    border: 1px solid black;
+    color: #333;
+  }
+  
+  .form-action button[type="button"]:hover {
+    background: #999;
+    color: white;
+  }
+  
+  /* Disabled state */
+  .form-action button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  /* Error + Success messages (consistent with AddEmployeeForm) */
+  .error,
+  .success-msg {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .error {
+    background: #ffe5e5;
+    border: 1px solid #ff9999;
+    color: #a80000;
+  }
+  
+  .success-msg {
+    background: #e5ffe9;
+    border: 1px solid #99ffb0;
+    color: #006622;
+  }
+  

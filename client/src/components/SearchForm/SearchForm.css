@@ -1,0 +1,124 @@
+.search-form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  padding: 1rem 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2D3639;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #506068;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+button[type="button"] {
+  border: 1px solid black;
+  background: #fff;
+  color: black;
+}
+
+button[type="button"]:hover {
+  background-color: #8F7866;
+  color: white;
+  font-weight: 400;
+}
+
+.error-text {
+  color: #e63946;
+  font-size: 0.875rem;
+  grid-column: 1 / -1;
+}
+
+.error-list {
+  grid-column: 1 / -1; /* Span across the full form width */
+  background: #ffe5e5;
+  border: 1px solid #ff9999;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-top: 0.8rem;
+  color: #a80000;
+  font-size: 0.9rem;
+}
+
+.error-list ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.error-list li {
+  margin-bottom: 0.4rem;
+}
+
+.error-list li:last-child {
+  margin-bottom: 0;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+
+@media (min-width: 600px) {
+  .search-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .search-form {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .search-form {
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .search-form {
+    max-width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (min-width: 2000px) {
+  .form-section{
+    width: 100%;
+  }
+  .search-form {
+    max-width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .form-actions button {
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+  }
+}
