@@ -2,7 +2,7 @@
 
 # 📇 Employee Directory App
 
-<img src="https://github.com/your-username/EmployeeDirectoryApp/assets/banner.png" alt="Employee Directory Banner" width="800"/>
+
 
 [![React](https://img.shields.io/badge/Frontend-ReactJS-61DBFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
